@@ -217,6 +217,33 @@ text-shadow: 0 0 5px rebeccapurple;
   }
 }
 
+/* ขนาดหน้าจอเล็กกว่า 768px (มือถือ) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .maincon {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .maincon img {
+    width: 150px;
+    margin-top: 15px;
+  }
+
+  section {
+    padding: 10px;
+  }
+}
+
 /* ขนาดหน้าจอเล็กกว่า 480px (มือถือจอเล็ก) */
 @media (max-width: 480px) {
   header h1 {
