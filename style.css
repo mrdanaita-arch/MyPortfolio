@@ -1,0 +1,191 @@
+/* Reset ค่าเริ่มต้น */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ฟอนต์และพื้นหลังธีมเทคโนโลยี */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #e0e0e0;
+  padding-bottom: 50px;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.7);
+  color: #00f2fe;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+/* Navbar */
+nav {
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #00f2fe;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #4facfe;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+/* ส่วนเนื้อหาแต่ละ Section */
+section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 1000px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+section h2, section h3, section h4 {
+  color: #00f2fe;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.4);
+}
+
+/* จัดข้อความกับรูปภาพใน section */
+.maincon, .maincon4, .maincon5, .maincon6, .maincon7, .maincon8, .maincon9, .maincon11, .maincon12{
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+ gap: 20px;
+ flex-wrap: wrap;
+
+}
+
+.maincon.info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+img {
+  border-radius: 10px;
+  width: 250px;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Grid จัดภาพ */
+.con-con3, .con-con4, .con-con5, .con-con6, 
+.con-con7, .con-con8, .con-con9, .con-con10, .con-con11 ,.con-con12 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr ));
+  gap: 20px;
+  justify-items: center;
+   margin-top: 10px;
+  
+}
+
+.footer {
+  background: linear-gradient(45deg, #141e30, #243b55);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 2px solid #00f2fe;
+}
+
+.footer a {
+  color: #00f2fe;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #4facfe;
+}
+.maincon3 a {
+  color: #00f2fe;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.4);
+}
+.maincon3 a:hover {
+color: #4facfe;
+text-shadow: 0 0 5px rebeccapurple;
+}
+.maincon4 a {
+  color: #00f2fe;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease ;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.4);
+}
+.maincon4 a:hover {
+  color: #4facfe;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.maincon11 a {
+  color: #00f2fe;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease ;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.4);
+}
+.maincon11 a:hover {
+  color: #4facfe;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.certificates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr 1fr));
+  gap: 5px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.certificates img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.certificates img:hover {
+  transform: scale(1.05);
+}
+
+.contitle{
+  object-fit: cover;
+}
